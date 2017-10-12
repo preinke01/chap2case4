@@ -1,0 +1,149 @@
+﻿@/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+
+   Great Lakescape Lodge Style Sheet
+   Author: peter reinke
+   Date:   10-11-17
+
+   Filename: lake_styles.css
+
+*/
+@charset "UTF-8";
+@@font-face {
+font-family: Champagne;
+src: url('cac_champagne.woff') format('woff'),
+url('cac_champagne.ttf') formata('truetype');
+
+font-family: Dobkin;
+src: url(./DobkinPlain.woff) format('woff')
+url('./DobkinPlain.ttf') format ('truetype');
+}
+/*stuctural styles*/
+html {
+  background-color: pink;
+  font-family: Palatino Linotype, Book Antigua, Palatino serif;
+
+
+}
+body {
+  background-color: lightblue;
+  font-family: Palatino Linotype, Book Antigua, Palatino serif;
+}
+header {
+  background-color: purple;
+
+}
+p {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  padding: 10px 25px 0px 25px;
+}
+section h1 {
+  font-family: Dobkin, cursive;
+  font-size: 2.5em;
+}
+footer{
+  font-style: normal;
+  font-size: 0.9em;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*navagation styles*/
+nav a{
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+nav > ul > li > a:link, nav > ul > li > a:visited {
+  color: white;
+  text-decoration: none;
+}
+nav > ul > li > a:active, nav > ul > li > a:hover {
+  color: hsla(0, 0%, 100%, 0.7);
+  background-color: hsla(0, 0%, 42%, 0.7);
+}
+/*section styles*/
+section h1 {
+  font-weight: Dobkin, cursive;
+  padding-left: 25px
+}
+
+section h2 {
+  font-family: Dobkin, cursive;
+  font-size: 1.5em;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+section nav ul li {
+  font-style: normal;
+  list-style: none;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+section#leftcol{
+  background-color: tan;
+
+}
+
+
+/*aside styles*/
+aside {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  margin: 20px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+section > aside#notes {
+  background-color: yellow;
+}
+
+aside#events {
+  background-color: green;
+}
+
+aside h1 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+aside h2 {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.3em;
+  text-align: left;
+  padding-left: 15px;
+}
+/*blockquote styles*/
+blockquote {
+  font-family: Palatino Linotype, Book Antigua, Palatino serif;
+  font-size: 1.25em;
+  font-style: italic;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  quotes: "\201C" "\201D"
+}
+blockquote::before {
+  content: open-quote;
+  font-family: Palatino Linotype, Book Antigua, Palatino serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+blockquote::after {
+  content: close-quote;
+  font-family: Palatino Linotype, Book Antigua, Palatino serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+footer {
+  color: white;
+  background-color: blue;
+  padding: 15px;
+}
